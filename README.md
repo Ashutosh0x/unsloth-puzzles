@@ -8,7 +8,7 @@
 
 A comprehensive implementation and optimization suite for the Unsloth AI coding challenges, focusing on high-performance kernels, memory-efficient backpropagation, and multi-GPU sharding.
 
-### 🚀 Quick Links
+###  Quick Links
 [**Verification Notebook**](https://www.kaggle.com/code/ashutosh0x/unsloth-puzzles-final-verification) | [**Technical Documentation**](DOCUMENTATION.md) | [**Accuracy Evaluation**](EVALUATION.md)
 
 > [!IMPORTANT]
@@ -67,3 +67,4 @@ All solutions are verified for mathematical correctness and performance.
 
 ## Contact & Contributions
 Developed by [Ashutosh Kumar Singh](https://github.com/Ashutosh0x). If you're a maintainer at Unsloth, feel free to reach out regarding the Challenge D PR!
+
