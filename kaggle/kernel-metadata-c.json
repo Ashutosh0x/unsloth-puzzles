@@ -1,0 +1,14 @@
+{
+    "id": "ashutosh0x/unsloth-puzzle-c-compile",
+    "title": "Unsloth Puzzle C: torch.compile",
+    "code_file": "C_compile.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "dataset_sources": [],
+    "competition_sources": [],
+    "model_sources": []
+}
