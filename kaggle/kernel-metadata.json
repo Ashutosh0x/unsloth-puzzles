@@ -6,9 +6,12 @@
     "kernel_type": "notebook",
     "is_private": "true",
     "enable_gpu": "true",
+    "gpu_type": "t4",
     "enable_tpu": "false",
     "enable_internet": "true",
-    "dataset_sources": [],
+    "dataset_sources": [
+        "ashutosh0x/unsloth-src-patched"
+    ],
     "kernel_sources": [],
     "competition_sources": []
 }
