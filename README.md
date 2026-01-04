@@ -8,6 +8,12 @@
 
 A comprehensive implementation and optimization suite for the Unsloth AI coding challenges, focusing on high-performance kernels, memory-efficient backpropagation, and multi-GPU sharding.
 
+### 🚀 Quick Links
+[**Verification Notebook**](https://www.kaggle.com/code/ashutosh0x/unsloth-puzzles-final-verification) | [**Technical Documentation**](DOCUMENTATION.md) | [**Accuracy Evaluation**](EVALUATION.md)
+
+> [!IMPORTANT]
+> **Hardware Requirement**: This suite requires an NVIDIA GPU with **SM >= 75** (e.g., **T4, L4, A100**). It is **not compatible** with the NVIDIA P100 (Pascal) due to Triton and BF16 requirements.
+
 ---
 
 ## Tech Stack
