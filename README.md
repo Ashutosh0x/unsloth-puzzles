@@ -10,7 +10,7 @@ A comprehensive implementation and optimization suite for the Unsloth AI coding 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" />
@@ -22,35 +22,35 @@ A comprehensive implementation and optimization suite for the Unsloth AI coding 
 
 ---
 
-## 🧩 Challenges Overview
+## Challenges Overview
 
-### ⚡ Challenge A: NF4 Triton Kernel
+### Challenge A: NF4 Triton Kernel
 Implemented a custom Triton GPU kernel for dequantizing **4-bit NormalFloat (NF4)** weights. This kernel matches the bit-exact logic of Unsloth's optimized implementations.
 - **Optimization**: Memory-coalesced loads and block-parallel processing.
 - **Performance**: Efficient per-block scaling with absmax constants.
 
-### ⛓️ Challenge B: FSDP2 + QLoRA
+### Challenge B: FSDP2 + QLoRA
 Configured **Fully Sharded Data Parallel (v2)** for 4-bit quantized training. 
 - **Efficiency**: Shards the model across multiple GPUs (e.g., T4 x2) to enable training of larger context lengths.
 - **Verification**: Tested on Kaggle dual-T4 setup.
 
-### 🚀 Challenge C: torch.compile Optimization
+### Challenge C: torch.compile Optimization
 Eliminated graph breaks to achieve **fullgraph=True** compilation. 
 - **Impact**: Significant reduction in kernel dispatch overhead and better utilization of hardware accelerators.
 
-### 🛠️ Challenge D: Llama 3.1 Tool Calling (Bounty Code)
+### Challenge D: Llama 3.1 Tool Calling (Bounty Code)
 Provided production-grade integration for **Llama 3.1 Instruct** tool calling.
 - **Fixes**: Corrected Jinja templates and added dynamic special token detection (`<|python_tag|>`, `<|eom_id|>`).
 - **PR Ready**: Refined based on maintainer-style code audits to ensure dynamic compatibility.
 
-### 🧠 Challenge E: Memory-Efficient Backprop
+### Challenge E: Memory-Efficient Backprop
 Implemented a custom `torch.autograd` function for **chunked language modeling loss**.
 - **VRAM Reduction**: Saves **~50%** peak VRAM during loss computation by avoiding the materialization of the full vocab-sized logit tensor.
 - **Correctness**: Verified with gradient unit tests (atol < 1e-5).
 
 ---
 
-## 📊 Verification & Benchmarks
+## Verification & Benchmarks
 
 All solutions are verified for mathematical correctness and performance.
 - **Detailed Evaluation**: [EVALUATION.md](./EVALUATION.md)
@@ -59,5 +59,5 @@ All solutions are verified for mathematical correctness and performance.
 
 ---
 
-## 📬 Contact & Contributions
+## Contact & Contributions
 Developed by [Ashutosh Kumar Singh](https://github.com/Ashutosh0x). If you're a maintainer at Unsloth, feel free to reach out regarding the Challenge D PR!
