@@ -119,3 +119,20 @@ class MemoryEfficientLinear(torch.autograd.Function):
                 loss = F.cross_entropy(logits, labels[i:end], reduction='sum')
                 # Autograd handles dX, dWeight recomputation
 ```
+
+---
+
+## 🏗️ Hardware Architecture Constraints
+
+During verification, it was identified that the **NVIDIA P100 (Pascal)** architecture is insufficient for several advanced features in this challenge:
+
+| Component | P100 Status | Requirement |
+|-----------|-------------|-------------|
+| Triton Kernels | ❌ Unsupported | SM >= 75 (T4/L4/A100) |
+| BF16 Compute | ❌ Emulated | Native BF16 support |
+| torch.compile | ⚠️ Degraded | Optimized for Ampere+ |
+| FSDP2 | ⚠️ Slow | High-bandwidth Interconnect |
+
+**Recommended Environments**:
+- Kaggle: T4 x2 or L4.
+- Colab: L4 or A100.
