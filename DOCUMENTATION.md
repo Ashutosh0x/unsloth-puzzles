@@ -122,7 +122,7 @@ class MemoryEfficientLinear(torch.autograd.Function):
 
 ---
 
-## 🏗️ Hardware Architecture Constraints
+##  Hardware Architecture Constraints
 
 During verification, it was identified that the **NVIDIA P100 (Pascal)** architecture is insufficient for several advanced features in this challenge:
 
@@ -136,3 +136,4 @@ During verification, it was identified that the **NVIDIA P100 (Pascal)** archite
 **Recommended Environments**:
 - Kaggle: T4 x2 or L4.
 - Colab: L4 or A100.
+
