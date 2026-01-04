@@ -1,4 +1,4 @@
-# 🦥 Unsloth Puzzles Challenge
+# Unsloth Puzzles Challenge
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.4](https://img.shields.io/badge/pytorch-2.4-ee4c2c.svg)](https://pytorch.org/)
