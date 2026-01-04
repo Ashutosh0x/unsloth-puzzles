@@ -32,6 +32,11 @@ class MemoryEfficientLinear(torch.autograd.Function):
         ctx.save_for_backward(X, weight, bias, labels)
         ctx.chunk_size = chunk_size
         
+        # Backward recomputes logits by design to trade compute for memory.
+        # Ensure we can actually compute gradients.
+        if X.requires_grad is False or weight.requires_grad is False:
+            raise RuntimeError("Hidden states and weights must require gradients for MemoryEfficientLinear.")
+        
         n_tokens = X.shape[0]
         total_loss = torch.tensor(0.0, device=X.device, dtype=torch.float32)
         

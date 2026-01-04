@@ -1,0 +1,14 @@
+{
+    "id": "ashutosh0x/unsloth-puzzles-final-verification",
+    "title": "unsloth-puzzles-final-verification",
+    "code_file": "FINAL_VERIFICATION.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": "true",
+    "enable_gpu": "true",
+    "enable_tpu": "false",
+    "enable_internet": "true",
+    "dataset_sources": [],
+    "kernel_sources": [],
+    "competition_sources": []
+}
